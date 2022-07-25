@@ -18,11 +18,11 @@ The package ‘GWmodel’ (Gollini et al., 2015) is an essential element of the 
 
 #### Parameters
 
-<img src="figures/Tab1.png" alt="Table 1" width="350"/>
+<img src="figures/Tab1.png" alt="Table 1" width="500"/>
 
 #### Packages required (to be loaded beforehand)
 
-<img src="figures/Tab2.png" alt="Table 2" width="350"/>
+<img src="figures/Tab2.png" alt="Table 2" width="500"/>
 
 ## Worked example of the function in action
 
@@ -53,7 +53,7 @@ While the correlation between the percentage of unemployed people and voter turn
 
 *Fig. 1 - GWR visualization: maps of local regression coefficients*
 
-<img src="figures/Fig1.png" alt="Figure 1" width="600"/>
+<img src="figures/Fig1.png" alt="Figure 1" width="750"/>
 
 As expected, the high social class variable displays an overall positive relationship with voter turnout. However, this correlation fades and even becomes negative in certain areas. This counterintuitive observation, associated with the relatively high p-value, confirms the weakness of the high social class variable in this model.
 
@@ -61,7 +61,7 @@ Both other explanatory variables are negatively correlated to voter turnout. The
 
 *Fig. 2 - Overall fit of the model*
 
-<img src="figures/Fig1.png" alt="Figure 1" width="600"/>
+<img src="figures/Fig2.png" alt="Figure 2" width="750"/>
 
 The R-squared values mapped above indicate some heterogeneity in the fit of the model across Greater Dublin. The relationship between variables seems to be stronger at the center and south-east of the study area, where local R-squared are higher.
 
@@ -69,28 +69,27 @@ The R-squared values mapped above indicate some heterogeneity in the fit of the 
 
 The function includes different methods to identify global multicollinearity. It prints the correlation coefficients between the variables themselves, and between their associated local regression coefficients estimated by GWR.
 
----
 
-Correlation coefficient between Pred.1 & Pred.2: -0.59
-P-value: 8.8e-32
+==Correlation coefficient between Pred.1 & Pred.2:== -0.59
+==P-value:== 8.8e-32
 
-Correlation coefficient between Pred.1 & Pred.3: 0.37
-P-value: 5.0e-12
+==Correlation coefficient between Pred.1 & Pred.3:== 0.37
+==P-value:== 5.0e-12
 
-Correlation coefficient between Pred.2 & Pred.3: 0.01
-P-value: 0.92
+==Correlation coefficient between Pred.2 & Pred.3:== 0.01
+==P-value:== 0.92
+
 
 *Fig. 3 - Correlation between local regression coefficients*
 
-<img src="figures/Fig3.png" alt="Figure 3" width="600"/>
+<img src="figures/Fig3.png" alt="Figure 3" width="550"/>
 
---- 
 
 There is a clear positive correlation between the percentage of people from a high social class and the percentage of one-year migrants, and negative relationship between high social class and unemployment. However, no statistically significant correlation can be observed between the percentage of one-year migrants and unemployment.
 
 Moreover, the statistically significant correlations between local regression coefficients in the GWR model is a sign of multicollinearity.
 
-Global Variance Inflation Factors:
+*Global Variance Inflation Factors:*
 
 | SC1  | Unempl | DiffAdd |
 |------|--------|---------|
@@ -106,7 +105,7 @@ Once global multicollinearity has been assessed, the function allows to carry on
 
 *Fig. 4 - Local correlation maps*
 
-<img src="figures/Fig4.png" alt="Figure 4" width="600"/>
+<img src="figures/Fig4.png" alt="Figure 4" width="750"/>
 
 The map on the right-hand side displays both positive and negative correlations between the unemployment and the percentage of one-year migrants. This counter-intuitive result is a result of the lack of statistically significant correlation between the two independent variables mentioned above.
 
@@ -114,13 +113,13 @@ The other two maps exhibit heterogeneous levels of correlation between the perce
 
 *Fig. 5 - Local variance inflation factors (VIFs) for each predictor*
 
-<img src="figures/Fig5.png" alt="Figure 5" width="600"/>
+<img src="figures/Fig5.png" alt="Figure 5" width="750"/>
 
 Mapping local variance inflation factors allows to measure multicollinearity across the study area. It expands on the results of the calculation of global VIFs by exhibiting heterogeneities. Then, the user of the function can investigate the reasons behind those differences in the strength of multicollinearity and can make informed choices for potential follow-ups.
 
 *Fig. 6 - Local Condition Number Map*
 
-<img src="figures/Fig6.png" alt="Figure 6" width="600"/>
+<img src="figures/Fig6.png" alt="Figure 6" width="350"/>
 
 The condition number is another measure of multicollinearity in linear regression models. Usually, when between 10 and 30, it indicates presence of multicollinearity; when its value is bigger than 30, the latter is deemed as strong. Mapping local condition numbers exhibits the extent and the heterogeneity of multicollinearity in the geographically weighted regression model processed by the function. In this example, it is most pronounced at the south-east of Greater Dublin.
 
