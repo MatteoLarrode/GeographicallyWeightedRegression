@@ -70,14 +70,14 @@ The R-squared values mapped above indicate some heterogeneity in the fit of the 
 The function includes different methods to identify global multicollinearity. It prints the correlation coefficients between the variables themselves, and between their associated local regression coefficients estimated by GWR.
 
 
-==Correlation coefficient between Pred.1 & Pred.2:== -0.59
-==P-value:== 8.8e-32
+**Correlation coefficient between Pred.1 & Pred.2:** -0.59
+**P-value:** 8.8e-32
 
-==Correlation coefficient between Pred.1 & Pred.3:== 0.37
-==P-value:== 5.0e-12
+**Correlation coefficient between Pred.1 & Pred.3:** 0.37
+**P-value:** 5.0e-12
 
-==Correlation coefficient between Pred.2 & Pred.3:== 0.01
-==P-value:== 0.92
+**Correlation coefficient between Pred.2 & Pred.3:** 0.01
+**P-value:** 0.92
 
 
 *Fig. 3 - Correlation between local regression coefficients*
