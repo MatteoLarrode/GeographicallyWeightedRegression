@@ -61,7 +61,7 @@ Both other explanatory variables are negatively correlated to voter turnout. The
 
 *Fig. 2 - Overall fit of the model*
 
-<img src="figures/Fig2.png" alt="Figure 2" width="750"/>
+<img src="figures/Fig2.png" alt="Figure 2" width="350"/>
 
 The R-squared values mapped above indicate some heterogeneity in the fit of the model across Greater Dublin. The relationship between variables seems to be stronger at the center and south-east of the study area, where local R-squared are higher.
 
